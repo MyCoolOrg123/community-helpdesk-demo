@@ -37,7 +37,7 @@ const routes: Record<ReportKind, RoutedReport> = {
 export function routeReport(text: string): RoutedReport {
   const normalized = text.toLowerCase();
 
-  if (normalized.includes("crash") || normalized.includes("regression")) {
+  if (normalized.includes("crash") || normalized.includes("regression") || normalized.includes("broken")) {
     return routes.bug;
   }
 
