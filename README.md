@@ -1,18 +1,18 @@
-# Community Helpdesk Demo
+# Community Helpdesk
 
-A public community repository for testing Discord workflows around support answers,
-onboarding, public bug reports, and weekly release recaps.
+Community Helpdesk keeps public community channels organized by routing support
+questions, onboarding requests, bug reports, and release notes to the right source
+of truth.
 
-## Bot scenarios to try
+## What lives here
 
-- Ask a support question in Discord and expect the answer to cite `docs/faq.md`.
-- Ask where newcomers should start and expect links to `docs/onboarding.md`.
-- Drop a user bug report into Discord and ask for a GitHub issue with labels.
-- Ask for a weekly release recap and expect `CHANGELOG.md` plus `releases/`.
+- `docs/faq.md` covers setup, permission, and key-rotation guidance.
+- `docs/onboarding.md` explains channels, roles, and first contribution steps.
+- `src/router.ts` maps incoming community reports to labels and source paths.
+- `CHANGELOG.md` and `releases/` track shipped work and weekly recap notes.
 
-## Common source paths
+## Maintainer workflow
 
-- `docs/faq.md` has grounded answers for support questions.
-- `docs/onboarding.md` explains roles, channels, and first contribution steps.
-- `src/router.ts` contains the lightweight routing logic used by examples.
-- `seed/discord-prompts.md` has ready-to-paste Discord prompts.
+1. Keep public docs current before changing channel names or command behavior.
+2. Route support questions to `support` and reproducible regressions to `bug`.
+3. Use release recap notes to prepare the weekly `#announcements` update.
