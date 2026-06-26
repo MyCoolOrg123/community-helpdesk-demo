@@ -21,3 +21,7 @@
 - Support questions: first bot answer within 60 seconds.
 - Bug reports: label and route within 15 minutes.
 - Release recap: every Friday by 3 PM Pacific.
+
+## Alias update
+
+`#support` is now `#help-desk`. Warm the alias cache after this merges.
