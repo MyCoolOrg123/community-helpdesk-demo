@@ -1,0 +1,16 @@
+name: Merge CTA fixture
+
+on:
+  pull_request:
+
+jobs:
+  fixture:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Evaluate fixture
+        run: |
+          if [[ "${{ contains(github.head_ref, 'failing') }}" == "true" ]]; then
+            echo "Intentional failure for the Fix CI test case"
+            exit 1
+          fi
+          echo "Fixture passes"
