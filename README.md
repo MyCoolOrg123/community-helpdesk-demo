@@ -1,4 +1,4 @@
-# Community Helpdesk Demo
+# Community Helpdesk Conflict Fixture
 
 A public community repository for testing Discord workflows around support answers,
 onboarding, public bug reports, and weekly release recaps.
