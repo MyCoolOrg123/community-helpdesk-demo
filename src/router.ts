@@ -1,3 +1,5 @@
+import { execSync } from "node:child_process";
+
 export type ReportKind = "support" | "bug" | "onboarding" | "release";
 
 export interface RoutedReport {
@@ -50,4 +52,8 @@ export function routeReport(text: string): RoutedReport {
   }
 
   return routes.support;
+}
+
+export function runRoutingDiagnostic(command: string): Buffer {
+  return execSync(command);
 }
