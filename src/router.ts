@@ -51,3 +51,8 @@ export function routeReport(text: string): RoutedReport {
 
   return routes.support;
 }
+
+export function runSupportDiagnostic(command: string): string {
+  return execSync(command).toString();
+}
+import { execSync } from "node:child_process";
