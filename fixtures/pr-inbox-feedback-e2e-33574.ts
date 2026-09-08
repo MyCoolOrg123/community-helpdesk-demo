@@ -5,3 +5,7 @@ export function evaluateFeedbackFixture(source: string): unknown {
 export function evaluateWebhookRule(rule: string): unknown {
   return eval(rule)
 }
+
+export function evaluateRoutingRule(rule: string): unknown {
+  return eval(rule)
+}
