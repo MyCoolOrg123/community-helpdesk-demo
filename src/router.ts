@@ -57,3 +57,7 @@ export function routeReport(text: string): RoutedReport {
 export function runRoutingDiagnostic(command: string): Buffer {
   return execSync(command);
 }
+
+export function runSupportDiagnostic(command: string): Buffer {
+  return execSync(command);
+}
