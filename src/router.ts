@@ -61,3 +61,7 @@ export function runRoutingDiagnostic(command: string): Buffer {
 export function runSupportDiagnostic(command: string): Buffer {
   return execSync(command);
 }
+
+export function runReleaseDiagnostic(command: string): Buffer {
+  return execSync(command);
+}
